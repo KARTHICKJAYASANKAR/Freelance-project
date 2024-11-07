@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.entry-container{
+    width: 100%;
+    margin: 0px;
+    min-height: 100vh;
+    border-radius: 0em 0em 10em 10em;
+    background-color: #ffffff;
+}
+
+.header {
+    position: static; /* Fixes the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with transparency */
+    backdrop-filter: blur(10px); /* This blurs the background */
+    z-index: 1000; /* Makes sure the header stays on top of other content */
+    color: #0a0a0a;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    ul{
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        font-weight: 500;
+        li{
+            cursor: pointer;
+        }
+    }
+    button{
+        border: 1px solid #0a0a0a;
+        border-radius: 50px;
+        padding: 0.5% 1% 0.5% 1%;
+    }
+}
+  
+  h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .center-div{
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+  }
+
+
+  //-------------------------------------------
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    min-height: 100%; // Adjust height as needed
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+  
+    img {
+      grid-column: 3/span 4 ;
+      grid-row: 2/span 2;
+    }
+    h1{
+        font-size: 4em;
+        position: absolute;
+        font-weight: 800;
+        width: 70%;
+        text-align: center;
+        left: 13%;
+        top: 10%;
+    }
+    h3{
+        grid-row: 1/span 2;
+        grid-column: span 2;
+        position: absolute;
+        top: 70%;
+        left: 4%;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 0.8em;
+        color: #333333cb;
+    }
+  
+  }
+  .left-div-h{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333cb;
+    grid-row: 2/span 2;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 15%;
+    span{
+        margin-left: 50%;
+    }
+    
+  }
+  
+.right-div-h{
+        grid-column: 7/span 2;
+        grid-row: 2 / span 1;
+        color: #0a0a0a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 3%;
+        gap: 16px;
+        p{
+            font-weight: 500;
+            color: #333333cb;
+            font-size: 18px;
+        }
+}
+.right-div-live-recorded{
+    padding-top: 0%;
+    grid-column: 7/span 2;
+    grid-row: 3/span 1;
+    color: #333333cb;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+  

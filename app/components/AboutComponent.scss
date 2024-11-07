@@ -1,0 +1,142 @@
+@import '../variables';
+
+.about-container{
+    background-color: $primaryBlack;
+    min-height: 100vh;
+    color: $primaryWhite;
+}
+
+.about-section-container{
+    background-color: $primaryBlack;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    .about-top-div{
+        // background-color: yellow;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        .about-head{
+            font-size: 60px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+        }
+        .values-mission{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .values{
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .mission{
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                text-align:center;
+            }
+            span{
+                color: $goldYellow !important;
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 0.6em;
+            }
+            p{
+                line-height: 1.7; 
+            }
+        }
+    }
+}
+
+.about-mid-div{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 50px;
+    .team-head{
+        font-size: 40px;
+        font-weight: 700;
+        color: $goldYellow;
+        display: flex;
+        justify-content: center;
+    }
+    .team-container{
+        display: flex;
+        justify-content: space-evenly;
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-weight: 600;
+                font-size: 24px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.about-bottom-div{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    .r-container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+    .team-head{
+        font-size: 40px;
+        font-weight: 700;
+        color: $goldYellow;
+        display: flex;
+        justify-content: center;
+    }
+    .review-card-div{
+        border: 1px solid $primaryWhite;
+        cursor: pointer;
+        border-radius: 6px;
+        height: 300px;
+        width: 300px;
+        padding: 4px;
+        p{
+            padding: 8px;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            padding: 4px;
+            justify-content: space-around;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                }  
+            }
+              
+        }
+        
+    }
+
+}
