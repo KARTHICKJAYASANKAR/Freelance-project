@@ -56,7 +56,7 @@ const AboutComponent = () => {
                     <div className='img-container'>
                     <img src='https://res.cloudinary.com/dgtonwmdv/image/upload/v1709403733/images/default_dp_kdnksj.jpg'/>
                         <>
-                            <span>Anni</span>
+                            <span>Karthiga</span>
                             <p>Co-Founder</p>
                         </>    
                     </div>
@@ -73,9 +73,7 @@ const AboutComponent = () => {
 
             
             <SquishyCard/>          
-        </div>
-
-        
+        </div>   
         </>
   )
 }

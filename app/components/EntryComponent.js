@@ -6,6 +6,9 @@ import Image from 'next/image';
 const Example = dynamic(() => import('../Sub-Components/FloatingMobile'), { ssr: false });
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft,faQuoteRight,faCircle ,faPlus} from '@fortawesome/free-solid-svg-icons'; // Example icon
+
+// Dynamically import Link from react-scroll to prevent SSR issues
+const Link = dynamic(() => import('react-scroll').then((mod) => mod.Link), { ssr: false });
 // React
 // import { motion } from "framer-motion"
 
@@ -15,20 +18,33 @@ import DottedButton from './ExternalComponents/DottedButton';
 
 const EntryComponent = () => {
   return (
-    <div className='entry-container'>
+    <div id='entry' className='entry-container'>
          <header className="header">
               <div className='logo'>StockWelt</div>
 
               <ul>
+              <Link to="about-section" smooth={true} duration={500}>
                 <li>About Us</li>
+              </Link>
+
+              <Link to="topic-section" smooth={true} duration={500}>
                 <li>Topics</li>
-                <li>Course Video</li>
+              </Link>
+
+              <Link to="contact-section" smooth={true} duration={500}>
+                <li>Contact Us</li>
+              </Link>
+
+              <Link to="course-section" smooth={true} duration={500}>
+                <li>Course Videos</li>
+              </Link>
+                
               </ul>
 
               <button>Signup →</button>
         </header>
 
-        <div className='image-container'>
+        <div  className='image-container'>
             <h1>Meet the Professional Mentor</h1>
                 <div className='left-div-h'>
                     <p><FontAwesomeIcon icon={faQuoteLeft} size="2xl" style={{color: "#0a0a0a",}} />
